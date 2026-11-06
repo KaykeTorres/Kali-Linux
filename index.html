@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Catálogo Kali Linux</title>
+<meta name="description" content="Guia de referência explicando para que serve cada aplicativo do menu do Kali Linux, organizado pelas 16 categorias do sistema.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="style.css">
+
+<header>
+  <button id="menuBtn" class="ico" aria-label="Menu">☰</button>
+  <h1>🐉 Kali Apps</h1>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar ferramenta ou assunto…  ( / )" autocomplete="off">
+    <span id="info"></span>
+  </div>
+  <button id="themeBtn" class="ico" aria-label="Alternar tema">🌓</button>
+</header>
+
+<div class="layout">
+  <aside><nav id="nav"></nav></aside>
+  <main>
+    <p id="sub" class="lead"></p>
+    <div id="suggest" hidden></div>
+    <div id="content"></div>
+    <p id="empty" hidden>Nenhuma ferramenta encontrada. Tente outra palavra.</p>
+    <footer>Clique no nome de uma ferramenta para copiar. Edite <code>data.js</code> para adicionar as suas. Feito para fins educacionais — use apenas em sistemas próprios ou com autorização.</footer>
+  </main>
+</div>
+
+<div id="toast">Copiado!</div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body></html>
